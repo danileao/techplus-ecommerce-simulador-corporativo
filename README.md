@@ -85,4 +85,3 @@ cd ecommerce-pedidos
 | Tech Lead     | João Henrique | joao.henrique@techplus.com |
 | QA            | Ana Paula     | ana.paula@techplus.com |
 
-
