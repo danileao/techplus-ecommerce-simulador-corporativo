@@ -1,5 +1,7 @@
 package com.techplus.ecommerce;
 
+import com.techplus.ecommerce.desconto.DescontoStrategy;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,6 +9,7 @@ public class Pedido {
     private Cliente cliente;
     private List<ItemPedido> itens = new ArrayList<>();
     private CupomDesconto cupom;
+    List<DescontoStrategy> estrategias = new ArrayList<>();
 
     public Pedido(Cliente cliente) {
         this.cliente = cliente;
@@ -25,15 +28,20 @@ public class Pedido {
         }
     }
 
+    public void adicionarEstrategia(DescontoStrategy estrategia) {
+        estrategias.add(estrategia);
+    }
+
+    public double getSubtotal() {
+        return itens.stream().mapToDouble(ItemPedido::getSubtotal).sum();
+    }
+
     public double calcularTotal() {
-        double total = itens.stream().mapToDouble(ItemPedido::getSubtotal).sum();
-        if (cupom != null) {
-            total -= cupom.getValor();
-        }
-        if (cliente.isVip()) {
-            total *= 0.95; // 5% de desconto para clientes VIP
-        }
-        return total;
+       double subtotal = getSubtotal();
+
+       double totalDescontos = estrategias.stream().mapToDouble(e -> e.calcularDesconto(this)).sum();
+
+       return subtotal - totalDescontos;
     }
 
     public List<ItemPedido> getItens() {
@@ -42,5 +50,10 @@ public class Pedido {
 
     public Cliente getCliente() {
         return cliente;
+    }
+
+
+    public CupomDesconto getCupom() {
+        return cupom;
     }
 }
