@@ -84,3 +84,4 @@ cd ecommerce-pedidos
 | Product Owner | Carla Martins | carla.martins@techplus.com |
 | Tech Lead     | João Henrique | joao.henrique@techplus.com |
 | QA            | Ana Paula     | ana.paula@techplus.com |
+
