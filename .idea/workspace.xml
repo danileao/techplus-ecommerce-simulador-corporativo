@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e43a69a-0352-42f6-a8fb-de53c894b813" name="Changes" comment="" />
+    <list default="true" id="7e43a69a-0352-42f6-a8fb-de53c894b813" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/techplus/ecommerce/discount/DiscountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techplus/ecommerce/desconto/DescontoStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techplus/ecommerce/domain/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/techplus/ecommerce/domain/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techplus/ecommerce/test/TestValorPedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/techplus/ecommerce/PedidoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/techplus/ecommerce/OrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/techplus/ecommerce/PrimeiroTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/techplus/ecommerce/desconto/DescontoTeste.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,31 +34,100 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="31QN9CJqUWIfeAhYaicRzEkgLXK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/daniele/desenvolvimento/curso/java/simulador-corporativo/techplus-ecommerce-simulador-corporativo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.DescontoTeste.deveAplicarDescontoDoCupomValido.executor": "Run",
+    "JUnit.DescontoTeste.deveAplicarDescontoVipDeCincoPorCento.executor": "Run",
+    "JUnit.DescontoTeste.naoDeveSerPossivelAplicarDescontoVipParaClienteNaoVip.executor": "Run",
+    "JUnit.DiscountTest.executor": "Run",
+    "JUnit.OrderTest.executor": "Run",
+    "JUnit.OrderTest.shouldThrowExceptionWithUnavailableProduct.executor": "Run",
+    "JUnit.PedidoTest.deveAdicionarEstrategiaDeDesconto.executor": "Run",
+    "JUnit.PedidoTest.deveAdicionarItemQuandoProdutoEmEstoque.executor": "Run",
+    "JUnit.PedidoTest.deveAplicarCupomValido.executor": "Run",
+    "JUnit.PedidoTest.deveCalcularTotalSemDescontos.executor": "Run",
+    "JUnit.PedidoTest.deveLancarExcecaoProdutoForaDeEstoque.executor": "Run",
+    "JUnit.PedidoTest.deveValidarQuantidadeDoPedido.executor": "Run",
+    "JUnit.PedidoTest.naoDeveAplicarCupomValido.executor": "Run",
+    "JUnit.PrimeiroTeste.executor": "Run",
+    "JUnit.PrimeiroTeste.teste.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/daniele/desenvolvimento/curso/java/simulador-corporativo/techplus-ecommerce-simulador-corporativo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techplus.ecommerce.Main" />
+}]]></component>
+  <component name="RunManager" selected="JUnit.DiscountTest">
+    <configuration name="DiscountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ecommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techplus.ecommerce.discount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techplus.ecommerce.discount" />
+      <option name="MAIN_CLASS_NAME" value="com.techplus.ecommerce.discount.DiscountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountTest.deveAplicarDescontoVipDeCincoPorCento" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ecommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techplus.ecommerce.discount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techplus.ecommerce.desconto" />
+      <option name="MAIN_CLASS_NAME" value="com.techplus.ecommerce.desconto.DiscountTest" />
+      <option name="METHOD_NAME" value="deveAplicarDescontoVipDeCincoPorCento" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountTest.naoDeveSerPossivelAplicarDescontoVipParaClienteNaoVip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ecommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techplus.ecommerce.discount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techplus.ecommerce.desconto" />
+      <option name="MAIN_CLASS_NAME" value="com.techplus.ecommerce.desconto.DiscountTest" />
+      <option name="METHOD_NAME" value="naoDeveSerPossivelAplicarDescontoVipParaClienteNaoVip" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ecommerce" />
       <extension name="coverage">
         <pattern>
@@ -49,13 +135,36 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.techplus.ecommerce" />
+      <option name="MAIN_CLASS_NAME" value="com.techplus.ecommerce.OrderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTest.shouldThrowExceptionWithUnavailableProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ecommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techplus.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techplus.ecommerce" />
+      <option name="MAIN_CLASS_NAME" value="com.techplus.ecommerce.OrderTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWithUnavailableProduct" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DiscountTest" />
+        <item itemvalue="JUnit.OrderTest" />
+        <item itemvalue="JUnit.OrderTest.shouldThrowExceptionWithUnavailableProduct" />
+        <item itemvalue="JUnit.DiscountTest.naoDeveSerPossivelAplicarDescontoVipParaClienteNaoVip" />
+        <item itemvalue="JUnit.DiscountTest.deveAplicarDescontoVipDeCincoPorCento" />
       </list>
     </recent_temporary>
   </component>
@@ -75,6 +184,11 @@
       <option name="presentableId" value="Default" />
       <updated>1755452183509</updated>
       <workItem from="1755452184281" duration="1482000" />
+      <workItem from="1755480355990" duration="2683000" />
+      <workItem from="1755518065608" duration="43000" />
+      <workItem from="1755518118775" duration="42000" />
+      <workItem from="1755518171434" duration="3166000" />
+      <workItem from="1755559495799" duration="5257000" />
     </task>
     <servers />
   </component>
