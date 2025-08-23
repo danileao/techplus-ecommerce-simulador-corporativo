@@ -8,7 +8,7 @@ import java.util.List;
 public class Order {
 
     private Customer customer;
-    private List<OrderItem> itens = new ArrayList<>();
+    private List<OrderItem> items = new ArrayList<>();
     private VoucherDiscount voucherDiscount;
     List<DiscountStrategy> strategies = new ArrayList<>();
 
@@ -20,7 +20,7 @@ public class Order {
         if (!item.getProduct().isAvailable()) {
             throw new IllegalArgumentException("Produto fora de estoque: " + item.getProduct().getName());
         }
-        itens.add(item);
+        items.add(item);
     }
 
     public void addVoucher(VoucherDiscount voucherDiscount) {
@@ -34,7 +34,7 @@ public class Order {
     }
 
     public double getSubtotal() {
-        return itens.stream().mapToDouble(OrderItem::getSubtotal).sum();
+        return items.stream().mapToDouble(OrderItem::getSubtotal).sum();
     }
 
     public double calculateTotal() {
@@ -52,5 +52,9 @@ public class Order {
 
     public Customer getClient() {
         return customer;
+    }
+
+    public List<OrderItem> getItems() {
+        return items;
     }
 }
