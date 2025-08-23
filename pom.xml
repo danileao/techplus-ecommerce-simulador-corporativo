@@ -46,6 +46,7 @@
             <configuration>
                 <excludes>
                     <exclude>com/techplus/ecommerce/Main.class</exclude>
+                    <exclude>com/techplus/ecommerce/adapter/in/console/EcommerceConsoleApp.class</exclude>
                 </excludes>
             </configuration>
         </execution>
